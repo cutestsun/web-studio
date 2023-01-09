@@ -1,0 +1,237 @@
+/* Header */
+
+header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+  background-color: var(--white-background-color);
+}
+
+.logo {
+  display: inline-block;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  text-decoration: none;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo .accent {
+  color: var(--primary-brand-color);
+}
+
+.menu-btn {
+  display: flex;
+  padding: 24px 0;
+
+  background-color: transparent;
+}
+
+.close-menu-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: fill, background-color var(--transition);
+}
+
+.close-menu-btn:hover,
+.close-menu-btn:focus {
+  fill: var(--white-background-color);
+  background-color: var(--pressed-state-color);
+}
+
+.header-icon {
+  fill: var(--headings-color);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 40px;
+  padding-top: 80px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-background-color);
+  transform: translateX(100%);
+  transition: transform var(--transition);
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(0);
+  }
+}
+
+.mobile-nav {
+  .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--headings-color);
+  }
+  .active-menu {
+    color: var(--pressed-state-color);
+  }
+}
+
+.mobile-contacts {
+  display: block;
+  margin-top: auto;
+  .item:last-child {
+    margin-top: 40px;
+  }
+  .phone {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--primary-brand-color);
+  }
+  .email {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+  }
+}
+
+.social-menu-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 333px;
+  // max-width: 94%;
+  // gap: 16%;
+  margin-top: 48px;
+
+  .social-list-item {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.social-mobile-link {
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color var(--transition);
+}
+
+.social-mobile-link:hover,
+.social-mobile-link:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.social-mobile-icon {
+  fill: var(--light-background-color);
+  width: 24px;
+  height: 24px;
+}
+
+.main-nav {
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 77px;
+  display: none;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 24px 0;
+  display: block;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--headings-color);
+  transition: color var(--transition);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pressed-state-color);
+}
+
+.active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  background-color: var(--pressed-state-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.nav-link.active {
+  color: var(--pressed-state-color);
+}
+
+.contacts.list {
+  display: flex;
+  margin-left: auto;
+  display: none;
+}
+
+.contacts .item:last-child {
+  margin-left: 40px;
+}
+
+.contacts a {
+  display: block;
+  padding: 24px 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+
+  transition: color var(--transition);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--pressed-state-color);
+}

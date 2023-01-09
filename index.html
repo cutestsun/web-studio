@@ -24,11 +24,73 @@
       <div class="container">
         <nav class="main-nav">
           <a class="logo" href="/"><span class="accent">Web</span>Studio</a>
+
           <ul class="nav-list list">
             <li class="item"><a class="nav-link active" href="./index.html">Studio</a></li>
             <li class="item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
             <li class="item"><a class="nav-link" href="/">Contacts</a></li>
           </ul>
+
+          <button
+            class="btn menu-btn js-open-menu js-menu-containe"
+            type="button"
+            aria-expanded="false"
+          >
+            <svg class="header-icon" width="32" height="22" aria-label="mobile-menu-switcher">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container js-menu-container">
+            <button class="btn close-menu-btn js-close-menu" type="button">
+              <svg class="close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="list mobile-nav">
+              <li class="item"><a class="link" href="/index.html">Studio</a></li>
+              <li class="item"><a class="link" href="/portfolio.html">Portfolio</a></li>
+              <li class="item"><a class="link active-menu" href="/">Contacts </a></li>
+            </ul>
+            <ul class="list mobile-contacts">
+              <li class="item">
+                <a class="phone" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+              </li>
+              <li class="item">
+                <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="social-menu-list list">
+              <li class="social-list-item">
+                <a class="social-mobile-link link" href="https://www.instagram.com/"
+                  ><svg class="social-mobile-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-mobile-link" href="https://www.twitter.com/"
+                  ><svg class="social-mobile-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-mobile-link" href="https://www.facebook.com/"
+                  ><svg class="social-mobile-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-mobile-link" href="https://www.linkedin.com/"
+                  ><svg class="social-mobile-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <ul class="contacts list">
@@ -353,6 +415,8 @@
       </section>
     </main>
 
+    <!-- Footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer-text">
@@ -458,7 +522,7 @@
             <textarea
               class="modal-comment"
               name="comment"
-              rows="7"
+              rows="6"
               placeholder="Text input"
             ></textarea>
           </label>
@@ -474,5 +538,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

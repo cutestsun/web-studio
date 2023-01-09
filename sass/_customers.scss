@@ -1,0 +1,48 @@
+// /* Customers */
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  //   max-width: 396px;
+  row-gap: 72px;
+  column-gap: 16px;
+}
+
+.client-list-item {
+  width: calc(50% - 16px);
+  max-width: 190px;
+}
+
+.client-link {
+  display: inline-flex;
+  width: 100%;
+  height: 88px;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--client-icon-color);
+  border-radius: 4px;
+  color: var(--client-icon-color);
+
+  transition: color var(--transition), border var(--transition);
+}
+
+.client-icon {
+  fill: currentColor;
+  /* display: inline-flex; */
+  width: 104px;
+  height: 56px;
+}
+
+/* .client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--pressed-state-color);
+} */
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--pressed-state-color);
+  color: var(--pressed-state-color);
+}

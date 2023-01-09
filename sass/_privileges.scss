@@ -1,0 +1,69 @@
+// /* Privileges */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-subtitle,
+.team-name,
+.project-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--headings-color);
+
+  margin-bottom: 8px;
+}
+
+.section-description,
+.team-position,
+.project-description {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+// .privileges .list {
+//   display: flex;
+// }
+
+.privileges .item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+// .privileges .section-subtitle {
+//   margin-bottom: 8px;
+// }
+
+// .privileges p {
+//   margin: 0;
+//   width: 264px;
+// }
+
+.privileges-icon {
+  width: 64px;
+  height: 64px;
+  display: none;
+}
+
+// .icon-area {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 4px;
+//   margin-bottom: 8px;
+//   height: 112px;
+//   background-color: var(--light-background-color);
+// }

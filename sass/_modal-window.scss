@@ -1,0 +1,219 @@
+/* Modal window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* display: flex;
+  flex-direction: column; */
+  padding: 24px;
+  padding-top: 72px;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 392px;
+  width: 91%;
+
+  background-color: var(--modal-bg-color);
+  border-radius: 4px;
+
+  transition: transform var(--transition);
+
+  // @media screen and (min-width: 428px) {
+  //   min-width: 392px;
+  // }
+}
+
+.modal-title {
+  display: block;
+
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--headings-color);
+  margin-bottom: 16px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-field {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal-form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--client-icon-color);
+  margin-bottom: 4px;
+}
+
+.modal-input,
+.modal-comment {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--transition);
+}
+
+.modal-input:focus,
+.modal-comment:focus {
+  border: 1px solid var(--primary-brand-color);
+  outline: transparent;
+}
+
+.modal-input {
+  height: 40px;
+  padding: 11px 38px;
+  font-size: 18px;
+  color: var(--main-text-color);
+}
+
+.modal .modal-comment {
+  min-height: 120px;
+  resize: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.modal-comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-field:nth-child(4) {
+  margin-bottom: 16px;
+}
+
+.modal-input-wrapper {
+  position: relative;
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  transition: fill var(--transition);
+}
+
+.modal-input:focus + .modal-input-icon {
+  fill: var(--primary-brand-color);
+}
+
+.icon-mail {
+  top: 14px;
+  left: 17.5px;
+}
+
+.modal-checkbox-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  user-select: none;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+
+.modal-checkbox {
+  appearance: none;
+  min-width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--headings-color);
+  border-radius: 2px;
+  transition: background-color var(--transition);
+  /* transition: border-color 2s linear; */
+}
+
+.modal-checkbox:checked {
+  background-image: url(../images/icon-check.svg);
+  background-color: var(--pressed-state-color);
+  border-color: var(--pressed-state-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-checkbox:checked ~ .modal-submit-btn {
+  background-color: #ffffff;
+}
+
+.policy-agree-text {
+  margin-left: 8px;
+  line-height: 1.33;
+}
+
+.policy-link {
+  color: var(--primary-brand-color);
+  text-decoration: underline;
+}
+
+.modal-submit-btn {
+  display: block;
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+  line-height: 1.5;
+  padding: 16px 32px;
+  width: 169px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.modal-form:last-child {
+  justify-content: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: fill, background-color var(--transition);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--white-background-color);
+  background-color: var(--pressed-state-color);
+}
