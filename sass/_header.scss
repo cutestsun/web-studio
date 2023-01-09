@@ -36,10 +36,10 @@ header {
   position: absolute;
   top: 40px;
   right: 40px;
-
   width: 24px;
   height: 24px;
-  display: inline-flex;
+  padding: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--accent-color);
@@ -70,12 +70,13 @@ header {
   height: 100vh;
   background-color: var(--white-background-color);
   transform: translateX(100%);
-  transition: transform var(--transition);
+  visibility: hidden;
+  transition: transform var(--transition), visibility var(--transition);
 
   &.is-open {
     display: flex;
     flex-direction: column;
-
+    visibility: visible;
     transform: translateX(0);
   }
 }
