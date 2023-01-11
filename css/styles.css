@@ -384,6 +384,7 @@ header {
   text-align: center;
   padding-top: 112px;
   padding-bottom: 112px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
@@ -761,12 +762,10 @@ header {
 
 .what-are-we-doing.section {
   padding-top: 0;
-}
-.what-are-we-doing.section .section-title {
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .what-are-we-doing.section .section-title {
+  .what-are-we-doing.section {
     display: block;
   }
 }
@@ -774,19 +773,18 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.what-are-we-doing.section img {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .what-are-we-doing.section img {
-    display: block;
-  }
-}
 
 /* Our Team */
 .our-team.section {
   background-color: var(--light-background-color);
   padding-bottom: 128px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .our-team.section {
+    padding-bottom: 104px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .our-team.section {

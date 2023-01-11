@@ -13,21 +13,13 @@
 
 .what-are-we-doing.section {
   padding-top: 0;
-
-  .section-title {
-    display: none;
-    @media screen and (min-width: 1200px) {
-      display: block;
-    }
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
+
   .list {
     display: flex;
     justify-content: space-between;
-  }
-  img {
-    display: none;
-    @media screen and (min-width: 1200px) {
-      display: block;
-    }
   }
 }
