@@ -40,9 +40,9 @@
 
   transition: transform var(--transition);
 
-  // @media screen and (min-width: 428px) {
-  //   min-width: 392px;
-  // }
+  @media screen and (min-width: 768px) {
+    max-width: 408px;
+  }
 }
 
 .modal-title {

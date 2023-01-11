@@ -4,12 +4,26 @@
   background-color: var(--headings-color);
   padding-top: 96px;
   padding-bottom: 96px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
-.footer .container {
+.footer-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    padding: 0px 93px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    flex-wrap: nowrap;
+  }
 }
 
 .footer-logo {
@@ -20,6 +34,9 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .footer-description {
@@ -27,16 +44,29 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
   width: 264px;
+  // margin-right: auto;
+  // margin-left: auto;
 }
 
 .footer-text {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-right: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 120px;
+  }
 }
 
 .footer-social {
   margin-bottom: 72px;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 80px;
+  }
 }
 
 .footer-social-title,
@@ -48,6 +78,10 @@
   margin-bottom: 16px;
   letter-spacing: 0.02em;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    display: inline-block;
+  }
 }
 
 .footer-social .social-list {
@@ -76,11 +110,7 @@
 }
 
 .footer-form {
-  // display: flex;
-
   width: 100%;
-  // margin-left: auto;
-  /* outline: 1px solid tomato; */
 }
 
 .footer-input-button-wrapper {
@@ -88,7 +118,16 @@
   flex-wrap: wrap;
   justify-content: center;
   // align-items: center;
-  gap: 16px;
+  row-gap: 16px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    column-gap: 24px;
+    justify-content: start;
+    width: 90%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .footer-input {

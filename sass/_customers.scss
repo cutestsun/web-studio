@@ -7,11 +7,17 @@
   //   max-width: 396px;
   row-gap: 72px;
   column-gap: 16px;
+  @media screen and (min-width: 768px) {
+    column-gap: 24px;
+  }
 }
 
 .client-list-item {
   width: calc(50% - 16px);
   max-width: 190px;
+  @media screen and (min-width: 768px) {
+    max-width: 168px;
+  }
 }
 
 .client-link {

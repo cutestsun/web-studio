@@ -29,19 +29,20 @@ img {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .container {
   // width: 1158px;
   // width: 428px;
+  // min-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
-  // outline: 2px solid tomato;
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-    // padding: 0px 15px;
-  }
+  outline: 2px solid tomato;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;

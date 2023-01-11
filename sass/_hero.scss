@@ -1,7 +1,7 @@
 // /* Hero */
 
 .hero.section {
-  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,6 +13,10 @@
   // height: 600px;
   // max-width: 1440px;
   margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 }
 
 .hero-title {
@@ -24,6 +28,15 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--white-background-color);
+  @media screen and (min-width: 768px) {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 48px;
+  }
 }
 
 .hero-btn {

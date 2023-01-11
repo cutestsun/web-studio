@@ -9,20 +9,35 @@ header {
 .logo {
   display: inline-block;
   font-family: 'Raleway';
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-text-color);
+  color: var(--headings-color);
   text-decoration: none;
 
   padding-top: 24px;
   padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 6.7%;
+    padding: 26px 0;
+    line-height: 1.33;
+  }
 }
 
 .logo .accent {
   color: var(--primary-brand-color);
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .menu-btn {
@@ -30,6 +45,9 @@ header {
   padding: 24px 0;
 
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .close-menu-btn {
@@ -75,9 +93,13 @@ header {
 
   &.is-open {
     display: flex;
+
     flex-direction: column;
     visibility: visible;
     transform: translateX(0);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -92,6 +114,11 @@ header {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--headings-color);
+    transition: color var(--transition);
+    &:hover,
+    &:focus {
+      color: var(--pressed-state-color);
+    }
   }
   .active-menu {
     color: var(--pressed-state-color);
@@ -106,9 +133,13 @@ header {
   }
   .phone {
     font-weight: 500;
-    font-size: 36px;
+    // font-size: 36px;
+    font-size: 8vw;
     line-height: 1.11;
     color: var(--primary-brand-color);
+    @media screen and (min-width: 420px) {
+      font-size: 36px;
+    }
   }
   .email {
     font-weight: 500;
@@ -145,13 +176,12 @@ header {
   justify-content: center;
 
   transition: background-color var(--transition);
-}
 
-.social-mobile-link:hover,
-.social-mobile-link:focus {
-  background-color: var(--pressed-state-color);
+  &:hover,
+  &:focus {
+    background-color: var(--pressed-state-color);
+  }
 }
-
 .social-mobile-icon {
   fill: var(--light-background-color);
   width: 24px;
@@ -159,30 +189,28 @@ header {
 }
 
 .main-nav {
-  justify-content: space-between;
-}
-
-.main-nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-
-header .container {
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
 }
 
 .nav-list {
-  display: flex;
+  // display: flex;
   margin-left: 77px;
   display: none;
-}
-
-.nav-list .item:not(:last-child) {
-  margin-right: 40px;
+  column-gap: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .nav-link {
   position: relative;
-  padding: 24px 0;
+  padding: 23px 0;
   display: block;
 
   font-weight: 500;
@@ -190,11 +218,15 @@ header .container {
   letter-spacing: 0.02em;
   color: var(--headings-color);
   transition: color var(--transition);
-}
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--pressed-state-color);
+  &:hover,
+  &:focus {
+    color: var(--pressed-state-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 26px 0;
+  }
 }
 
 .active::after {
@@ -213,26 +245,54 @@ header .container {
 }
 
 .contacts.list {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   display: none;
-}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
-.contacts .item:last-child {
-  margin-left: 40px;
+  .item:first-child {
+    margin-bottom: 4px;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      margin-right: 40px;
+    }
+  }
+
+  .email {
+    padding-top: 17px;
+  }
+  .phone {
+    padding-bottom: 17px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    flex-direction: row;
+    .email,
+    .phone {
+      padding: 26px 0;
+    }
+  }
 }
 
 .contacts a {
   display: block;
-  padding: 24px 0;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  // padding: 24px 0;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
   color: var(--main-text-color);
-
   transition: color var(--transition);
-}
-
-.contacts a:hover,
-.contacts a:focus {
-  color: var(--pressed-state-color);
+  &:hover,
+  &:focus {
+    color: var(--pressed-state-color);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
