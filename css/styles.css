@@ -37,6 +37,7 @@ img {
 }
 
 .container {
+  min-width: 320px;
   max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
@@ -86,6 +87,7 @@ p {
 header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   background-color: var(--white-background-color);
+  min-width: 320px;
 }
 
 .logo {
@@ -173,16 +175,22 @@ header {
   transform: translateX(100%);
   visibility: hidden;
   transition: transform var(--transition), visibility var(--transition);
+  flex-direction: column;
+  z-index: 999;
 }
 .menu-container.is-open {
   display: flex;
-  flex-direction: column;
   visibility: visible;
   transform: translateX(0);
 }
 @media screen and (min-width: 768px) {
   .menu-container {
     display: none;
+  }
+}
+@media screen and (max-width: 319px) {
+  .menu-container {
+    width: 100%;
   }
 }
 
@@ -221,6 +229,11 @@ header {
 @media screen and (min-width: 420px) {
   .mobile-contacts .phone {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mobile-contacts .phone {
+    font-size: 25px;
   }
 }
 .mobile-contacts .email {
@@ -384,6 +397,7 @@ header {
   text-align: center;
   padding-top: 112px;
   padding-bottom: 112px;
+  min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -778,6 +792,7 @@ header {
 .our-team.section {
   background-color: var(--light-background-color);
   padding-bottom: 128px;
+  min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -926,6 +941,7 @@ header {
   background-color: var(--headings-color);
   padding-top: 96px;
   padding-bottom: 96px;
+  min-width: 320px;
 }
 @media screen and (min-width: 1200px) {
   .footer {
@@ -1221,6 +1237,11 @@ header {
 @media screen and (min-width: 768px) {
   .portfolio-link {
     max-width: 356px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-link {
+    max-width: 360px;
   }
 }
 

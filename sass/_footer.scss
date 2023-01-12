@@ -4,6 +4,7 @@
   background-color: var(--headings-color);
   padding-top: 96px;
   padding-bottom: 96px;
+  min-width: 320px;
   @media screen and (min-width: 1200px) {
     padding-top: 100px;
     padding-bottom: 100px;

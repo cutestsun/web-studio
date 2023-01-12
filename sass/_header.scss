@@ -4,6 +4,7 @@ header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
   background-color: var(--white-background-color);
+  min-width: 320px;
 }
 
 .logo {
@@ -90,16 +91,19 @@ header {
   transform: translateX(100%);
   visibility: hidden;
   transition: transform var(--transition), visibility var(--transition);
-
+  flex-direction: column;
+  z-index: 999;
   &.is-open {
     display: flex;
 
-    flex-direction: column;
     visibility: visible;
     transform: translateX(0);
   }
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  @media screen and (max-width: 319px) {
+    width: 100%;
   }
 }
 
@@ -139,6 +143,9 @@ header {
     color: var(--primary-brand-color);
     @media screen and (min-width: 420px) {
       font-size: 36px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 25px;
     }
   }
   .email {
