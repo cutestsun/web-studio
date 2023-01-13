@@ -82,7 +82,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-
+  opacity: 0;
   padding: 40px;
   padding-top: 80px;
   width: 100vw;
@@ -90,12 +90,12 @@ header {
   background-color: var(--white-background-color);
   transform: translateX(100%);
   visibility: hidden;
-  transition: transform var(--transition), visibility var(--transition);
+  transition: transform var(--transition), visibility var(--transition), opacity var(--transition);
   flex-direction: column;
   z-index: 999;
   &.is-open {
     display: flex;
-
+    opacity: 1;
     visibility: visible;
     transform: translateX(0);
   }

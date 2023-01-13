@@ -10,6 +10,7 @@
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   transition: opacity var(--transition), visibility var(--transition);
+  // overflow-y: scroll;
 }
 
 .is-hidden {
@@ -26,7 +27,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
+  max-height: 95%;
+  z-index: 2;
+  overflow: auto;
   /* display: flex;
   flex-direction: column; */
   padding: 24px;
