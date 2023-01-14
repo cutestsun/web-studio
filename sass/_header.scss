@@ -43,7 +43,7 @@ header {
 
 .menu-btn {
   display: flex;
-  padding: 24px 0;
+  padding: 0;
 
   background-color: transparent;
   @media screen and (min-width: 768px) {
@@ -269,12 +269,6 @@ header {
     }
   }
 
-  .email {
-    padding-top: 17px;
-  }
-  .phone {
-    padding-bottom: 17px;
-  }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     flex-direction: row;
