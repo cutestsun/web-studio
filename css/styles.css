@@ -224,7 +224,7 @@ header {
 }
 .mobile-contacts .phone {
   font-weight: 500;
-  font-size: 8vw;
+  font-size: 8.5vw;
   line-height: 1.11;
   color: var(--primary-brand-color);
 }
@@ -233,9 +233,29 @@ header {
     font-size: 36px;
   }
 }
+@media screen and (max-width: 371px) {
+  .mobile-contacts .phone {
+    font-size: calc(8.1vw + 1px);
+  }
+}
+@media screen and (max-width: 354px) {
+  .mobile-contacts .phone {
+    font-size: calc(8vw + 1px);
+  }
+}
+@media screen and (max-width: 342px) {
+  .mobile-contacts .phone {
+    font-size: calc(7.9vw + 1px);
+  }
+}
+@media screen and (max-width: 329px) {
+  .mobile-contacts .phone {
+    font-size: calc(7.8vw + 1px);
+  }
+}
 @media screen and (max-width: 320px) {
   .mobile-contacts .phone {
-    font-size: 25px;
+    font-size: 25.9px;
   }
 }
 .mobile-contacts .email {

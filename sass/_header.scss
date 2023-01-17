@@ -138,16 +138,30 @@ header {
   .phone {
     font-weight: 500;
     // font-size: 36px;
-    font-size: 8vw;
+    font-size: 8.5vw;
     line-height: 1.11;
     color: var(--primary-brand-color);
     @media screen and (min-width: 420px) {
       font-size: 36px;
     }
+
+    @media screen and (max-width: 371px) {
+      font-size: calc(8.1vw + 1px);
+    }
+    @media screen and (max-width: 354px) {
+      font-size: calc(8vw + 1px);
+    }
+    @media screen and (max-width: 342px) {
+      font-size: calc(7.9vw + 1px);
+    }
+    @media screen and (max-width: 329px) {
+      font-size: calc(7.8vw + 1px);
+    }
     @media screen and (max-width: 320px) {
-      font-size: 25px;
+      font-size: 25.9px;
     }
   }
+
   .email {
     font-weight: 500;
     font-size: 20px;
