@@ -1,4 +1,4 @@
-# Web Studio Project
+# 📊 Web Studio Project
 
 Welcome to the "Web Studio" web project! This project showcases web development and visual design skills.
 
