@@ -20,7 +20,6 @@ The following technologies were used to create this project:
 - CSS3
 - SASS
 - JavaScript
-- And many more tools
 
 ## Project Launch
 
