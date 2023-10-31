@@ -24,4 +24,3 @@ The following technologies were used to create this project:
 ## Project Launch
 
 To see the website in action, simply follow the link: [Web Studio Project](https://cutestsun.github.io/web-studio/)
-
