@@ -16,8 +16,8 @@ This website represents a web studio project specializing in creating modern and
 
 The following technologies were used to create this project:
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - SASS
 - JavaScript
 
