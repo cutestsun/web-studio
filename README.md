@@ -1,4 +1,4 @@
-# 📊 Web Studio Project
+# 📊 Web Studio
 
 Welcome to the "Web Studio" web project! This project showcases web development and visual design skills.
 
@@ -23,4 +23,4 @@ The following technologies were used to create this project:
 
 ## Project Launch
 
-To see the website in action, simply follow the link: [Web Studio Project](https://cutestsun.github.io/web-studio/)
+To see the website in action, simply follow the link: [Web Studio](https://cutestsun.github.io/web-studio/)
