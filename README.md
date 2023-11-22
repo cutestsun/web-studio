@@ -2,7 +2,7 @@
 
 Welcome to the "Web Studio" web project! This project showcases web development and visual design skills.
 
-<img width="1440" alt="web-studio" src="https://github.com/cutestsun/web-studio/assets/118314867/da8b3f19-3015-4069-aa7f-4e62f6a0b108">
+
 
 ## About
 
